@@ -52,49 +52,22 @@
 			<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
+		<script>
+			!function(e,a,n,t){var i=e.head;if(i){
+			if (a) return;
+			var o=e.createElement("style");
+			o.id="alloy-prehiding",o.innerText=n,i.appendChild(o),setTimeout(function(){o.parentNode&&o.parentNode.removeChild(o)},t)}}
+			(document, document.location.href.indexOf("adobe_authoring_enabled") !== -1, ".personalization-container { opacity: 0 !important }", 3000);
+		  </script>
+		  
 <script>
 	var dataLayer={
 		"page" : {
-			"pageinfo" : {
-				"pageName" : "Home"
+			"pageName" : "Home"
 				}
-			}
 	};
 </script>
-<script>
-   //prehiding snippet for Adobe Target with asynchronous tags deployment
-   ;(function(win, doc, style, timeout) {
-   var STYLE_ID = 'at-body-style';
-   function getParent() {
-      return doc.getElementsByTagName('head')[0];
-   }
-   function addStyle(parent, id, def) {
-      if (!parent) {
-      return;
-      }
-      var style = doc.createElement('style');
-      style.id = id;
-      style.innerHTML = def;
-      parent.appendChild(style);
-   }
-   function removeStyle(parent, id) {
-      if (!parent) {
-      return;
-      }
-      var style = doc.getElementById(id);
-      if (!style) {
-      return;
-      }
-      parent.removeChild(style);
-   }
-   addStyle(getParent(), STYLE_ID, style);
-   setTimeout(function() {
-      removeStyle(getParent(), STYLE_ID);
-   }, timeout);
-   }(window, document, "body {opacity: 0 !important}", 3000));
-</script>
-<script src="https://assets.adobedtm.com/6268dc4b6b26/d57075db70f1/launch-e0a576748212-development.min.js" async></script>
-
+<script src="https://assets.adobedtm.com/6268dc4b6b26/b3afeb593581/launch-939a27db19f3-development.min.js" async></script>
 	    </head>
 	
 	<body>
